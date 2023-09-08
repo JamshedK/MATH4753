@@ -1,0 +1,11 @@
+Package: MATH4753KARIFALL2023
+Type: Package
+Title: MATH4753 lab functions
+Version: 0.1.0
+Author: Jamshed Karimnazarov
+Maintainer: Jamshed Karimnazarov <karimnazarovj@gmail.com>
+Description: Functions from Fall semester MATH4753.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
