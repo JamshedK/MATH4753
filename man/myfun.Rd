@@ -2,19 +2,26 @@
 % Please edit documentation in R/myfun.R
 \name{myfun}
 \alias{myfun}
-\title{My first function}
+\title{Plot and Shade a Normal Distribution Curve}
 \usage{
 myfun(x)
 }
 \arguments{
-\item{x}{A quantitative vector}
+\item{mu}{Mean of the normal distribution.}
+
+\item{sigma}{Standard deviation of the normal distribution.}
+
+\item{a}{Value up to which area under the curve is shaded.}
 }
 \value{
-A vector of squared values plus 10
+A list containing the probability \(P(X \leq a)\).
 }
 \description{
-My first function
+Plot and Shade a Normal Distribution Curve
 }
 \examples{
-myfun(1:10)
+\dontrun{
+  result <- myncurve(0, 1, 0.5)
+  print(result)
+}
 }
