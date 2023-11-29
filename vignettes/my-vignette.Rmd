@@ -1,0 +1,59 @@
+---
+title: "my-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753KARIFALL2023)
+```
+
+# Package Description
+
+This is the package that we build during our class. It contains several functions that we developed over the semester which have been added to the package. Here are some of the examples of the functions
+
+# 4 Functions
+
+## Function 1
+
+This function calculates the 95% Confidence Interval for the Mean
+
+```{r}
+sample_data <- c(1, 2, 3, 4, 5)
+MATH4753KARIFALL2023::myci(sample_data)
+```
+
+## Function 2
+This function calculates the height of the tree given BHDiameter
+```{r}
+MATH4753KARIFALL2023::myplot(1:10)
+```
+
+## Function 3
+
+Determine Number of Tickets to be Sold for a Flight
+
+```{r}
+data <- ntickets(N=200, gamma=0.02, p=0.95)
+print(data)
+```
+
+## Function 4
+
+Plot and Shade a Normal Distribution Curve
+
+```{r}
+result <- myncurve(0, 1, 0.5)
+print(result)
+```
+
